@@ -33,13 +33,14 @@ Major dependencies for this project include:
 - "framer-motion": "^10.17.9"
 - "sass": "^1.69.7"
 
+
 ## Installation
 
 To install and run this project locally, follow these steps:
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/your-username/google-search-clone.git
+git clone https://github.com/Jenil-Kunadiya/google-search-clone.git
 ```
 
 2. Navigate to the project directory:
@@ -77,6 +78,7 @@ After obtaining your API key and Search Engine ID, you can make requests to the 
 https://www.googleapis.com/customsearch/v1?key=<Your_Google_Custom_Search_JSON_API_Key>&cx=<Your_Search_Engine_ID>&q={trimmed_Google_Search_Input}
 ```
 **Note:** this API link was used in App.js Component
+
 
 
 ## Contributing
