@@ -10,12 +10,7 @@ import google_search_by_image from '../images/Google search by image.svg'
 import google_text_logo from '../images/google text logo.svg'
 import {useNavigate} from 'react-router-dom'
 
-export const SearchResults = ({ isSidebarOpen, setIsSidebarOpen, googleSearchBarInput, SetGoogleSearchBarInput, googleSearchResultData, isLoading , handleGoogleSearchSubmit}) => {
-
-  
-  const handleSidebarToggle =() =>{
-    setIsSidebarOpen(!isSidebarOpen);
-  }
+export const SearchResults = ({ googleSearchBarInput, SetGoogleSearchBarInput, googleSearchResultData, isLoading , handleGoogleSearchSubmit}) => {
 
   const navigate = useNavigate();
   
@@ -47,8 +42,6 @@ export const SearchResults = ({ isSidebarOpen, setIsSidebarOpen, googleSearchBar
       >
 
         <div className='google_search_nav_left_side_div'>
-
-          <div className='google_search_nav_sidebar_toggle' onClick={handleSidebarToggle}><i class="fa-solid fa-bars-staggered"></i></div>
 
           <div className='google_search_result_nav_logo_div'> 
             <img className="google_search_result_nav_logo" src={google_text_logo} alt='google'/>
