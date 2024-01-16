@@ -75,7 +75,7 @@ To access Google Custom Search JSON API, you'll need to obtain an API key and a 
 After obtaining your API key and Search Engine ID, you can make requests to the Google Custom Search API using the following URL:
 
 ```plaintext
-https://www.googleapis.com/customsearch/v1?key=<Your_Google_Custom_Search_JSON_API_Key>&cx=<Your_Search_Engine_ID>&q={trimmed_Google_Search_Input}
+https://www.googleapis.com/customsearch/v1?key=<Your_Google_Custom_Search_JSON_API_Key>&cx=<Your_Search_Engine_ID>&q=${trimmed_Google_Search_Input}
 ```
 **Note:** this API link was used in App.js Component
 
