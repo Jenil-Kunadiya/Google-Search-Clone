@@ -1,0 +1,309 @@
+.google_search_component {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
+
+
+
+
+    //------------------------------------------------ Google Search Pre-Loader ----------------------------------------------//
+
+
+    .google_search_preloader_div{
+        .google_logo_image{
+            mix-blend-mode: multiply;
+
+            @media (max-width: 768px) {
+                scale: 0.8;
+            }
+        }
+    }
+    
+
+
+
+    //------------------------------------------------ Google Search Screen Navbar ----------------------------------------------//
+
+    .google_search_navbar{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+        box-sizing: border-box;
+
+        .google_search_nav_sidebar_toggle{
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #cae2ff;
+            }
+            
+        }
+
+        .google_search_nav_right_side_div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .google_search_nav_right_side_links_div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                margin-right: 10px;
+
+                .google_search_nav_right_side_links{
+                    list-style: none;
+                    cursor: pointer;
+                    font-size: 13px;
+    
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+
+            .google_search_nav_right_side_more_apps_div{
+                width: 35px;
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                cursor: pointer;
+
+                .google_search_nav_right_side_more_apps_icon{
+                    width: 25px;
+                }
+
+                &:hover{
+                    background-color: #5f636840;
+                }
+            }
+
+            .google_search_nav_right_side_profile_div{
+                width: 33px;
+                height: 33px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                border-radius: 50%;
+                cursor: pointer;
+                border: 2px solid transparent;
+                overflow: hidden;
+
+                &:hover{
+                    border: 2px solid #5f636840;
+                }
+
+                .google_search_nav_right_side_profile{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    //------------------------------------------------ Googgle Search Screen Content ----------------------------------------------//
+
+    .google_search_content_main_container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+
+        
+        .google_search_content_div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            position: relative;
+            padding: 10px;
+    
+            @media (max-width: 768px) {
+                gap: 25px;
+            }
+    
+            .google_logo_image_div{
+                position: relative;
+        
+                .google_logo_image{
+                    position: relative;
+                    mix-blend-mode: multiply;
+    
+                    @media (max-width: 768px) {
+                        scale: 0.8;
+                    }
+                }
+            }
+            
+            .google_search_input_container {
+                position: relative;
+                width: fit-content;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                border-radius: 24px;
+                height: 45px;
+                width: 500px;
+    
+                @media (max-width: 768px) {
+                    width: 350px;
+                }
+                
+                .google_search_input {
+                    border: none;
+                    border-radius: 24px;
+                    padding: 0 80px 0 50px;
+                    cursor: text;
+                    color: #4b29ba;
+                    font-size: 18px;
+                    height: 100%;
+                    width: 100%;
+                    box-sizing: border-box;
+                    transition: box-shadow 0.2s ease-in-out;
+        
+        
+                    &:focus {
+                    outline: none; 
+                    border-color: #ccc; 
+                    }
+    
+                    &:hover{
+                        box-shadow: 0 1px 6px rgba(32,33,36,.28);
+                    }
+        
+                }
+                
+                .google_search_left_icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 20px; // Adjust based on the desired spacing
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    color: #5628EE; // Icon color
+                }
+    
+                .google_search_right_icons{
+                    position: absolute;
+                    top: 50%;
+                    right: 20px; // Adjust based on the desired spacing
+                    transform: translateY(-50%);
+                    color: #5628EE; // Icon color
+                    display: flex;
+                    gap: 10px;
+    
+                    .google_search_right_icons_mike,
+                    .google_search_right_icons_lens{
+                        width: 30px;
+                        cursor: pointer;
+                    }
+                }
+            }
+    
+            .google_search_input_search_btn_div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 13px;
+    
+                .google_search_input_search_btn{
+                    padding: 0 16px;
+                    background-color: #f8f9fa;
+                    border-radius: 5px;
+                    border: 1px solid transparent;
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 36px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: #000;
+    
+                    &:hover{
+                        box-shadow: 0 1px 1px rgba(0,0,0,.1);
+                        border: 1px solid #dadce0;
+                    }
+                }
+            }
+        }
+
+        //------------------------------------------------ Googgle Search Screen Footer ----------------------------------------------//
+
+        .google_search_footer{
+            width: 100%;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+
+            .google_search_footer_location{
+                width: 100%;
+                font-size: 14px;
+                text-align: start;
+                box-sizing: border-box;
+                padding: 15px 30px;
+                border-bottom: 1px solid #e3e3e3;
+                cursor: context-menu;
+            }
+
+            .google_search_footer_about_links_main_div{
+                width: 100%;
+                padding: 0 30px;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                box-sizing: border-box;
+
+                .google_search_footer_about_links_div{
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                    .google_search_footer_about_link{
+                        font-size: 14px;
+                        padding: 15px;
+                        list-style: none;
+                        cursor: pointer;
+                        
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                @media (max-width: 1000px) {
+                    gap: 0px;
+
+                    .google_search_footer_about_links_div{
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+  

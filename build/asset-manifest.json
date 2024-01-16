@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7afc6561.css",
+    "main.js": "/static/js/main.7e0c333d.js",
+    "static/media/profile.jpeg": "/static/media/profile.5dc4cf876c4c3f67f415.jpeg",
+    "static/media/Google Logo Animation.gif": "/static/media/Google Logo Animation.9fb6ab9729ff1e5a6bfd.gif",
+    "static/media/google mike.svg": "/static/media/google mike.85bcb31fd97295015abdfee14da44857.svg",
+    "static/media/google text logo.svg": "/static/media/google text logo.1f9dcdfbc12622181e61cb044f775e3b.svg",
+    "static/media/Google search by image.svg": "/static/media/Google search by image.7831ce76eb2189d09be722a0cb7b1b07.svg",
+    "index.html": "/index.html",
+    "static/media/nine_dots_nav_iocn.svg": "/static/media/nine_dots_nav_iocn.d364c2a173eeca8859680c540265cfa3.svg",
+    "main.7afc6561.css.map": "/static/css/main.7afc6561.css.map",
+    "main.7e0c333d.js.map": "/static/js/main.7e0c333d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7afc6561.css",
+    "static/js/main.7e0c333d.js"
+  ]
+}
