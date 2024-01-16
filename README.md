@@ -8,7 +8,7 @@ Welcome to the Google Search Clone project! This project is a ReactJS-based repl
 - [Features](#features)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
-- [API Key Reference](#APIKeyReference)
+- [API Key Reference](#api-key-reference)
 - [Contributing](#contributing)
 
 
