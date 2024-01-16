@@ -1,4 +1,4 @@
-# Google Search Clone Project
+# Google Search Clone Project | React JS
 
 ## Overview
 Welcome to the Google Search Clone project! This project is a ReactJS-based replica of Google Search integrated with Google's REST API for real-time search results.
