@@ -22,7 +22,7 @@ function App() {
      if (/^[a-zA-Z0-9].*/.test(trimmedGoogleSearchInput)) {
        try {
          setIsLoading(true); // Set loading state to true
-         const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyCQE7SxaQaTYnOE2sxUuOt2_oX_iJjDN7g&cx=e7722d23ec4ab44c5&q=${trimmedGoogleSearchInput}`);
+         const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=<Your_Google_Custom_Search_JSON_API_Key>&cx=<Your_Search_Engine_ID>&q=${trimmed_Google_Search_Input}`);
          const searchData = await response.json();
          setGoogleSearchResultData(searchData);
          setIsLoading(false); // Set loading state to false
